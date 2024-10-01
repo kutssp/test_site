@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Failed Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .error-icon {
+            font-size: 60px;
+            color: #f44336;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .order-details .detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .order-details .detail:last-child {
+            border-bottom: none;
+        }
+        .button {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #d32f2f;
+        }
+        .secondary-button {
+            background-color: #ddd;
+            color: #333;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+        footer .social-icons img {
+            width: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="error-icon">❌</div>
+        <h1>Ошибка оплаты!</h1>
+        <p>К сожалению, ваш платеж не был успешным. Попробуйте снова или свяжитесь с поддержкой.</p>
+ 
+        <div class="order-details">
+            <h2>Детали заказа</h2>
+            <div class="detail">
+                <span>Номер заказа:</span>
+                <span>123456</span>
+            </div>
+            <div class="detail">
+                <span>Дата попытки оплаты:</span>
+                <span>29 сентября 2024</span>
+            </div>
+            <div class="detail">
+                <span>Сумма оплаты:</span>
+                <span>5000 UAH</span>
+            </div>
+            <div class="detail">
+                <span>Метод оплаты:</span>
+                <span>Кредитная карта</span>
+            </div>
+        </div>
+ 
+        <a href="#" class="button">Повторить оплату</a>
+        <a href="#" class="button secondary-button">Вернуться на главную</a>
+    </div>
+ 
+    <footer>
+        <p>Если у вас возникли вопросы, свяжитесь с <a href="#">поддержкой</a>.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
