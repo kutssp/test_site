@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Обратный звонок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .callback-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .callback-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .callback-form label {
+            display: block;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .callback-form input,
+        .callback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .callback-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .callback-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+        footer .social-icons img {
+            width: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="callback-icon">📞</div>
+        <h1>Запрос на обратный звонок</h1>
+        <p>Пожалуйста, заполните форму, и мы свяжемся с вами в ближайшее время.</p>
+ 
+        <div class="callback-form">
+            <form action="https://tradebit.com.ua/callback" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Ваш телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="time">Удобное время для звонка:</label>
+                <input type="time" id="time" name="time">
+
+                <label for="comment">Комментарий (опционально):</label>
+                <textarea id="comment" name="comment"></textarea>
+
+                <button type="submit">Отправить запрос</button>
+            </form>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>Если у вас возникли вопросы, свяжитесь с <a href="#">поддержкой</a>.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
