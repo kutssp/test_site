@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Успешный платеж</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .order-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .order-details .detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #1ABC9C;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Спасибо за вашу оплату!</h1>
+        <p>Ваш заказ успешно обработан.</p>
+
+        <div class="order-details">
+            <div class="detail">
+                <span>Номер заказа:</span>
+                <span>123456</span>
+            </div>
+            <div class="detail">
+                <span>Дата оплаты:</span>
+                <span>29 сентября 2024</span>
+            </div>
+            <div class="detail">
+                <span>Сумма:</span>
+                <span>5000 UAH</span>
+            </div>
+            <div class="detail">
+                <span>Метод оплаты:</span>
+                <span>Кредитная карта</span>
+            </div>
+        </div>
+
+        <a href="#" class="button">Скачать продукт</a>
+        <a href="#" class="button">Вернуться на главную</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Арбитражный Telegram-бот | <a href="mailto:support@example.com">Техническая поддержка</a></p>
+    </footer>
+
+</body>
+</html>
